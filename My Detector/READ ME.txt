@@ -1,0 +1,1 @@
+run detector.py in a terminal using python3

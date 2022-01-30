@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "description":  "Automatically scrapes online news article web pages and using NLP and ML determines the stance of the headline against the articles (useful against misleading headlines and clickbait)",
+  "name": "My Stance Detection Tool",
+  "version": "3.4",
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "3colourlogo.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.foxnews.com/*",
+        "https://www.bbc.co.uk/news/*"
+//        ,"<all_urls>"
+      ],
+      "js": ["jquery.min.js","content.js"]
+    }
+  ]
+}
